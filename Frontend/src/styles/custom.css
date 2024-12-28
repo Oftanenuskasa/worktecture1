@@ -1,0 +1,52 @@
+/* src/styles/custom.css */
+
+/* Circle container styles */
+.circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: rotate 10s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Rotating text styles */
+  .circle-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b82f6;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transform-origin: 50% 50%;
+    white-space: nowrap;
+    animation: rotateText 10s infinite linear;
+  }
+  
+  /* Keyframes for rotating the entire container */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Keyframes for rotating the text */
+  @keyframes rotateText {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
